@@ -73,6 +73,8 @@ Throughout this generation process, I only really saved image grids where at lea
 
 One experiment I wanted to try was intentionally adding in strongly feminine words, such as woman, to see how the results would change for an otherwise neutrally-worded prompt that had produced more masculine images.
 
+![Four images side by side, showing successsful lawyer vs succesful lawyer woman, successful serious person vs serious successful leader woman]()
+
 
 #### OVERBEARINGLY WEIGHTED WORDS
 
