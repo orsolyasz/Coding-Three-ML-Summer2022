@@ -73,17 +73,21 @@ Throughout this generation process, I only really saved image grids where at lea
 
 One experiment I wanted to try was intentionally adding in strongly feminine words, such as woman, to see how the results would change for an otherwise neutrally-worded prompt that had produced more masculine images.
 
-![Four images side by side, showing successsful lawyer vs succesful lawyer woman, successful serious person vs serious successful leader woman]()
+![Four Dall-e Mini output images side by side, showing "successsful lawyer" as mostly men vs "succesful lawyer woman" as women, "successful serious person" as mostly men vs "serious successful leader woman" as women](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/woman_added.png?raw=true)
 
 
 #### OVERBEARINGLY WEIGHTED WORDS
 
-As I was exploring, I noticed that there were certain words that would have an overbearingly powerful effect on the image, pulling it toward their base meaning, even if in context these words were not the focus of the text prompt. Words like earth, natural, or future are examples that could simply not be included without overpowering the overall image (anything with "earth" in it just seemed to produce a massive globe with some minor details maybe), and often even take away a person/portrait element completely (even if person had been in the prompt, even as the very first word of the text). 
+As I was exploring, I noticed that there were certain words that would have an overbearingly powerful effect on the image, pulling it toward their base meaning, even if in context these words were not the focus of the text prompt. Words like earth, natural, or future are examples that could simply not be included without overpowering the overall image (anything with "earth" in it just seemed to produce a massive globe with some minor details maybe), and often even take away a person/portrait element completely (even if person had been in the prompt, even as the very first word of the text).
+
+![Four Dall-e Mini images, showing "a natural leader" as mosly birds, two prompts about the future leader of the world/humany as mostly just images of globes, and "the face of a protective person" as masked faces ](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/owerpowering_images.png?raw=true)
 
 
 #### GENDER TEST 2: -PERSON
 
-After a while, I started feeling like perhaps the word "person" was also an overbearingly powerful word, pulling everything into masc territory. My dilemma became: if this was the case, that would be revealing in itself, but it would still stop me from seeing the effect of other words appropriately. So, I ran a test where the prompt was literally only to show a portrait of a person - and yes, it was overwhelmingly masc. Keeping this in mind, I then tried a number of my previous prompts without the word "person" in it, to try to really focus on the representations of the actual characteristics I was looking at.
+After a while, I started feeling like perhaps the word "person" was also an overbearingly powerful word, pulling everything into masc territory. My dilemma was: if this was the case, that would be revealing in itself, but it would still stop me from seeing the effect of other words appropriately. So, I ran a test where the prompt was literally only to show a portrait of a person - and yes, it was overwhelmingly masc. Keeping this in mind, I then tried a number of my previous prompts without the word "person" in it, to try to really focus on the representations of the actual characteristics I was looking at.
+
+![Four Dall-e Mini images, showing](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/person_taken_out.png?raw=true)
 
 
 #### GENDER TEST 3: +GENDER
