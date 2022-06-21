@@ -31,7 +31,7 @@ _"A Strong and Successful CEO" - VQGAN, FacesHQ, CLIP_
 To see if it might help, I did also try to use an image of my self as an initialization or target image, which had somewhat better results but still did not exactly feel like what I was looking for.
 
 [![AI gnenerated, a fragmented person figure standing by several microphones](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-9-faceshq-portrait_of_a_powerful_inspiring_person.png?raw=true)](https://drive.google.com/file/d/1GxhUPn2u46vvYPWNUWYjNeM0kZvalS-g/view?usp=sharing)
-_"Portrait of a Powerful Inspiring Person" - VQGAN, FacesHQ, CLIP, based on prompt image_
+_"Portrait of a Powerful Inspiring Person" - VQGAN, FacesHQ, CLIP, based on prompt image - Click to open Animation_
 
 At this phase, I felt like I really needed to explore some further options (outside of this notebook) that might produce better results. As I was more focused on an artistic investigation than having control over the code at this point, I tried to look for more ready-made systems, and tried a few sites including art-breeder. The results from these all had interesting aspects to them, but they were often lower-quality and still rarely very face-focused.
 
@@ -69,10 +69,7 @@ Throughout this generation process, I only really saved image grids where at lea
 I am sharing some visuals of this experimentation below:
 
 
-#### REPETITIONS
-
-As listed, I would often try out very similar prompts to try to get a good range of coverage for ideas that seemed interesting.
-{IMAGES HERE}
+## Observations
 
 #### GENDER TEST 1: +WOMAN
 
@@ -88,7 +85,7 @@ As I was exploring, I noticed that there were certain words that would have an o
 
 #### GENDER TEST 2: -PERSON
 
-After a while, I started feeling like perhaps the word "person" was also an overbearingly powerful word, pulling everything into masc teritory. My dilemma became: if this was the case, that would be revealing in itself, but it would still stop me from seeing the effect of other words appropriately. So, I ran a test where the prompt was literally only to show a portrait of a person - and yes, it was overwhelmingly masc. Keeping this in mind, I then tried a number of my previous prompts without the word "person" in it, to try to really focus on the representations of the actual characteristics I was looking at.
+After a while, I started feeling like perhaps the word "person" was also an overbearingly powerful word, pulling everything into masc territory. My dilemma became: if this was the case, that would be revealing in itself, but it would still stop me from seeing the effect of other words appropriately. So, I ran a test where the prompt was literally only to show a portrait of a person - and yes, it was overwhelmingly masc. Keeping this in mind, I then tried a number of my previous prompts without the word "person" in it, to try to really focus on the representations of the actual characteristics I was looking at.
 {IMAGES HERE}
 
 
@@ -127,7 +124,7 @@ As the last step, I created interpolations and style mixes between these project
 
 From these, I selected relatively mid-way blends where both my facial features and the projected generated image's features were clearly recognizable. For some portraits, style-mixing worked better, but for others I preferred the interpolation results and took out an ideal still from the interpolated video. After manually editing back some of the texture and style from the origin generated images (as these got lost when the faces turned more realistic as projections), I had my final five images, and saved them in a sequence I found meaningful
 
-{MAIN PROJECT IMAGE AGAIN}
+![Five portraits of faces labelled strength leadership power femininity and beauty](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/00_Final_Series/00_Machine_Reflections.jpg?raw=true "Machine Reflections")
 
 
 ## Final Takeaways, Future Plans
