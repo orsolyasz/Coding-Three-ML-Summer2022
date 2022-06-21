@@ -44,9 +44,11 @@ _Portrait of an Amazing Genius_
 This was when I stumbled into [Dall-e Mini](https://huggingface.co/spaces/dalle-mini/dalle-mini) -which I later realized must have been actually a fairly recent release- that got me really hopeful, having seen some extremely impressive images come out of the restricted-access full version. And -although not quite comparable to its bigger version- this system produced very exciting images even from my earliest experimentation! After a few rounds, I decided to spend a good amount of time on experimenting with this generator, to see how it responds to different prompts and which ones also become interesting images.
 
 ![A 3x3 grid of blurred/abstracted masculine figures in dark robes like lawyers or judges might wear](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/01_dominantly_m/a%20successful%20lawyer.png?raw=true)
+
 _"Successful Lawyer" - Dall-e Mini_
 
 ![A 3x3 grid of white masculine figures in bright colored shirts and suit jackets, many of them with their hand in a fist to their chin ](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/01_dominantly_m/portrait%20of%20a%20successful%20serious%20person.png?raw=true)
+
 _"Portrait of a Successful Serious Person" - Dall-e Mini_
 
 
