@@ -26,7 +26,7 @@ As I was already somewhat familiar with Crawson's system, I started my experimen
 
 To see if it might help, I did also try to use an image of my self as an initialization or target image, which had somewhat interesting results but still did not exactly feel like what I was looking for.
 
-{GIF: transforming a pic of me based on a prompt}
+[![{}]()](https://drive.google.com/file/d/1GxhUPn2u46vvYPWNUWYjNeM0kZvalS-g/view?usp=sharing)
 
 At this phase, I felt like I really needed to explore some further options (outside of this notebook) that might produce better results. As I was more focused on an artistic investigation than having control over the code at this point, I tried to look for more ready-made systems, and tried a few sites including art-breeder. The results from these all had interesting aspects to them, but they were often lower-quality and still rarely very face-focused.
 
