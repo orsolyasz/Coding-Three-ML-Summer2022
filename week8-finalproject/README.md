@@ -99,27 +99,24 @@ At one point, I wanted to see if the AI might have heard about "the weak gender"
 Finally, as mentioned, I added in portrait-specific words to try to get better faces out of the system later on - here are some results of that.
 {IMAGES HERE}
 
-
+Beside these major observations, I also recommend looking through the images in the final collections [folder](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/tree/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots) as the collection itself reveals a lot of interesting biases in how these prompts are understood. I also find it important to note that it was beyond the scope of this project to examine biases based on other factors beside gender, but the produced images are still strikingly overwhelmingly white, which points to the need for further in-depth investigations into factors like racial bias, and likely more.
 
 ## Curation and Creation - Final Image Blending
 
 After this phase of what was basically "data collection," now having about 129 x 9 images at my disposal, it was time to move to the curation and creation phase. The first step of this was to categorize all my data - by labelling each collection (grid of 9 pictures saved as one file) as either 1) dominantly masculine, 2) more masc than feminine, 3) neutral or non-human (this I mostly just kept for reference on how the model works), 4) more fem than masc, and 5) dominantly fem. 
 
 Seeing that a large portion of my collection focused on heavily masculine and heavily feminine images, I realized that this was an area I really wanted to work with for the next phases of my project. I went through these folders a couple times again, this time looking for the images that really absolutely grabbed me -either for a stylistic reason, or for having clear and unique faces in them. I ended up narrowing down my top choices to about 10 images, and so now it was time to move on to applying some of these to my own portrait.
-{IMAGES HERE}
+
+![Image illustrating steps of the creation process](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/MachineReflections-Process.jpg?raw=true)
+_The final creation process, also detailed below_
 
 For creating a "blend" with my face, I was at first really unsure what approach I wanted to take. I tried to look around and tried a few style transfer examples, but nothing really seemed to do what I wanted -- while I had picked some of my selections for their artistic style, I still felt like there needed to be some sort of a facial feature blend between the generated portrait results and my own face for my point to come across. I also tried seeing if going back to the VQGAN notebook might be a good approach, but the results it produced were still too fragmented even with just the initial and target images set.
 
-Then I realized - I still had the problem of my generated images being quite small as well. And while they were interesting, and often unique in their "art style," they were still perhaps not "face-like" enough for a nice blend to occur. To solve these problems, I decided to go back to the )(StyleGAN example notebook)[LINK HERE] from class, and to set it up to allow me to upload number of my generated pictures as well as my portrait and try interpolating or style mixing between them. 
+Then I realized - I still had the problem of my generated images being quite small as well. And while they were interesting, and often unique in their "art style," they were still perhaps not "face-like" enough for a nice blend to occur. To solve these problems, I decided to go back to a copy of the [StyleGAN example notebook](https://colab.research.google.com/drive/14ZNERpTIghfjZqTrxVmGamkZ1PtpuoTu#scrollTo=JDm5iC35GbYi) from class, and to set it up to allow me to upload number of my generated pictures as well as my portrait and try interpolating or style mixing between them. 
 
 This process did pose a number of challenges as I had to test out with some trial and error which generated faces the algorithm was able to recognize as faces, but once I had my final 6 or so selections that could be recognized, the projection of these into w space worked really well. Better than I even planned or expected, I now had fully machine-rendered (fairly) realistic faces of what a powerful person might look like, or what a strong or beautiful person might look like (etc) -- which was really exciting. 
 
-{IMAGES HERE}
-
-As the last step, I created interpolations and style mixes between these projections and a projection of my own face, and then selected You can see videos of interpolations as well as the full style mix strip in the main (repo)[LINK HERE] under each appropriately named folder. 
-
-{GIF OF TRANSITIONS HERE}
-
+As the last step, I created interpolations and style mixes between these projections and a projection of my own face, and then selected You can see videos of interpolations as well as the full style mix strip in the [documentation](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/tree/main/week8-finalproject/Generated_Imagery/02_Selections) under each appropriately named folder. 
 
 From these, I selected relatively mid-way blends where both my facial features and the projected generated image's features were clearly recognizable. For some portraits, style-mixing worked better, but for others I preferred the interpolation results and took out an ideal still from the interpolated video. After manually editing back some of the texture and style from the origin generated images (as these got lost when the faces turned more realistic as projections), I had my final five images, and saved them in a sequence I found meaningful
 
