@@ -1,6 +1,8 @@
 # Machine Reflections: A Self-Portrait Series
 
-![Five portraits of faces labelled strength leadership power femininity and beauty {Machine Reflections}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/00_Final_Series/00_Machine_Reflections.jpg?raw=true "Machine Reflections")
+![Five portraits of faces labelled strength leadership power femininity and beauty](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/00_Final_Series/00_Machine_Reflections.jpg?raw=true "Machine Reflections")
+<figcaption>Machine Reflections</figcaption>
+
 
 _Machine Reflections_ is a series of AI-assisted self-portraits that explore gender bias. By using large-scale generative models to create portraits of people with specific qualities and traits, this piece investigates how these models were distorted by preconceptions built into the large datasets they were trained on. Based on gender-neutral prompts of varying complexity, like  "a successful lawyer," "portrait of a person," "portrait of beauty," "the best professor in the world," "the best teacher in the world," and dozens more, the project collected a large set of machine-generated images that reveal the often heavily gendered and stereotypical nature of these systems.
 
