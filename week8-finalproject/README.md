@@ -1,7 +1,6 @@
 # Machine Reflections: A Self-Portrait Series
 
 ![Five portraits of faces labelled strength leadership power femininity and beauty](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/00_Final_Series/00_Machine_Reflections.jpg?raw=true "Machine Reflections")
-_Machine Reflections_
 
 _Machine Reflections_ is a series of AI-assisted self-portraits that explore gender bias. By using large-scale generative models to create portraits of people with specific qualities and traits, this piece investigates how these models were distorted by preconceptions built into the large datasets they were trained on. Based on gender-neutral prompts of varying complexity, like  "a successful lawyer," "portrait of a person," "portrait of beauty," "the best professor in the world," "the best teacher in the world," and dozens more, the project collected a large set of machine-generated images that reveal the often heavily gendered and stereotypical nature of these systems.
 
@@ -17,29 +16,38 @@ This experience got me thinking about different experiments I could run on this 
 
 ## Beginning Experimentation - Looking for the Right Generative Model
 
-![AI generated abstract shapes and parts of human faces, including a beard {Portrait of a Successful and Serious Person - VQGAN, FacesHQ, CLIP}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-4-portrait_of_a_successful_and_serious_person_seed-10.png?raw=true)
+![AI generated abstract shapes and parts of human faces, including a beard](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-4-portrait_of_a_successful_and_serious_person_seed-10.png?raw=true)
+_"Portrait of a Successful and Serious Person" - VQGAN, FacesHQ, CLIP_
+
 
 As I was already somewhat familiar with Crawson's system, I started my experimentation there. Because I had never tried working with any of the alternative available models (I had always stuck with the default imagenet model only), my process this time started by generating some [videos](https://drive.google.com/drive/folders/1BS92OgD5Meqh0MDEx6qqG9PfsxZUjhrJ?usp=sharing) through different models like faceshq, wiki art, as well as imagenet as it had worked nicely before. Unfortunately, although I was immediately seeing some interesting results in terms of bias, my hope was really to try to focus on generating images of a single, ideally recognizable human face, which seemed to pose a big challenge to this system. My images were always way too fragmented and not detailed or specific enough for me to easily translate them onto a self-portrait in any way. Although I had hopes for faceshq, I couldn't really ever get it to work right - it mostly kept generating many small faces as texture. It really seemed like this system -regardless of the model selected- was just better suited for more detailed prompts that were maybe more landscape-, collage-, or object-focused (like the images I had created before).
 
-![AI generated, distorted face of a masculine figure, with many features repeated{Photorealistic Portrait of a Powerful Person - VQGAN, IMGNET,CLIP}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video_photorealistic_portrait_of_a_powerful_person_imgnet.png?raw=true)
+![AI generated, distorted face of a masculine figure, with many features repeated](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video_photorealistic_portrait_of_a_powerful_person_imgnet.png?raw=true)
+_"Photorealistic Portrait of a Powerful Person" - VQGAN, IMGNET,CLIP_
 
-![AI generated image, fragmented faces and suits {A Strong and Successful CEO - VQGAN, FacesHQ, CLIP}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-12-facehq-a_strong_and_successful_ceo.png?raw=true)
+![AI generated image, fragmented faces and suits](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-12-facehq-a_strong_and_successful_ceo.png?raw=true)
+_"A Strong and Successful CEO" - VQGAN, FacesHQ, CLIP_
 
 To see if it might help, I did also try to use an image of my self as an initialization or target image, which had somewhat better results but still did not exactly feel like what I was looking for.
 
-[![AI gnenerated, a fragmented person figure standing by several microphones {Portrait of a Powerful Inspiring Person - VQGAN, FacesHQ, CLIP, based on prompt image}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-9-faceshq-portrait_of_a_powerful_inspiring_person.png?raw=true)](https://drive.google.com/file/d/1GxhUPn2u46vvYPWNUWYjNeM0kZvalS-g/view?usp=sharing)
+[![AI gnenerated, a fragmented person figure standing by several microphones](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-9-faceshq-portrait_of_a_powerful_inspiring_person.png?raw=true)](https://drive.google.com/file/d/1GxhUPn2u46vvYPWNUWYjNeM0kZvalS-g/view?usp=sharing)
+_"Portrait of a Powerful Inspiring Person" - VQGAN, FacesHQ, CLIP, based on prompt image_
 
 At this phase, I felt like I really needed to explore some further options (outside of this notebook) that might produce better results. As I was more focused on an artistic investigation than having control over the code at this point, I tried to look for more ready-made systems, and tried a few sites including art-breeder. The results from these all had interesting aspects to them, but they were often lower-quality and still rarely very face-focused.
 
-![AI generated, a mix between a mountain and an old man with a long beard {Portrait of a Good Confident Leader}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/portrait_of_a_good_confident_leader.png?raw=true)
+![AI generated, a mix between a mountain and an old man with a long beard](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/portrait_of_a_good_confident_leader.png?raw=true)
+_Portrait of a Good Confident Leader_
 
-![AI generated, fragmented mix between a middle aged man in a suit and maybe a spider{Portrait of an Amazing Genius}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/portrait_of_an_amazing_genius.png?raw=true)
+![AI generated, fragmented mix between a middle aged man in a suit and maybe a spider](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/portrait_of_an_amazing_genius.png?raw=true)
+_Portrait of an Amazing Genius_
 
 This was when I stumbled into [Dall-e Mini](https://huggingface.co/spaces/dalle-mini/dalle-mini) -which I later realized must have been actually a fairly recent release- that got me really hopeful, having seen some extremely impressive images come out of the restricted-access full version. And -although not quite comparable to its bigger version- this system produced very exciting images even from my earliest experimentation! After a few rounds, I decided to spend a good amount of time on experimenting with this generator, to see how it responds to different prompts and which ones also become interesting images.
 
-![A 3x3 grid of blurred/abstracted masculine figures in dark robes like lawyers or judges might wear {Successful Lawyer - Dall-e Mini} ](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/01_dominantly_m/a%20successful%20lawyer.png?raw=true)
+![A 3x3 grid of blurred/abstracted masculine figures in dark robes like lawyers or judges might wear](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/01_dominantly_m/a%20successful%20lawyer.png?raw=true)
+_"Successful Lawyer" - Dall-e Mini_
 
-![A 3x3 grid of white masculine figures in bright colored shirts and suit jackets, many of them with their hand in a fist to their chin {Portrait of a Successful Serious Person - Dall-e Mini}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/01_dominantly_m/portrait%20of%20a%20successful%20serious%20person.png?raw=true)
+![A 3x3 grid of white masculine figures in bright colored shirts and suit jackets, many of them with their hand in a fist to their chin ](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/01_dominantly_m/portrait%20of%20a%20successful%20serious%20person.png?raw=true)
+_"Portrait of a Successful Serious Person" - Dall-e Mini_
 
 
 
