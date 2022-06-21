@@ -1,6 +1,6 @@
 # Machine Reflections: A Self-Portrait Series
 
-![Five portraits of faces labelled strength leadership power femininity and beauty](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/00_Final_Series/00_Machine_Reflections.jpg?raw=true "Machine Reflections")
+![Five portraits of faces labelled strength leadership power femininity and beauty {Machine Reflections}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/00_Final_Series/00_Machine_Reflections.jpg?raw=true "Machine Reflections")
 
 _Machine Reflections_ is a series of AI-assisted self-portraits that explore gender bias. By using large-scale generative models to create portraits of people with specific qualities and traits, this piece investigates how these models were distorted by preconceptions built into the large datasets they were trained on. Based on gender-neutral prompts of varying complexity, like  "a successful lawyer," "portrait of a person," "portrait of beauty," "the best professor in the world," "the best teacher in the world," and dozens more, the project collected a large set of machine-generated images that reveal the often heavily gendered and stereotypical nature of these systems.
 
@@ -16,12 +16,13 @@ This experience got me thinking about different experiments I could run on this 
 
 ## Beginning Experimentation - Looking for the Right Generative Model
 
-{IMAGE: VQGAN BIAS}
-
+![AI generated image of abstract shapes and parts of human faces, including a beard {Portrait of a Successful and Serious Person - VQGAN, FacesHQ, CLIP}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-4-portrait_of_a_successful_and_serious_person_seed-10.png?raw=true)
 
 As I was already somewhat familiar with Crawson's system, I started my experimentation there. Because I had never tried working with any of the alternative available models (I had always stuck with the default imagenet model only), my process this time started by generating some (videos)[LINK HERE] through different models like faceshq, wiki art, as well as imagenet as it had worked nicely before. Unfortunately, although I was immediately seeing some interesting results in terms of bias, my hope was really to try to focus on generating images of a single, ideally recognizable human face, which seemed to pose a big challenge to this system. My images were always way too fragmented and not detailed or specific enough for me to easily translate them onto a self-portrait in any way. Although I had hopes for faceshq, I couldn't really ever get it to work right - it mostly kept generating many small faces as texture. It really seemed like this system -regardless of the model selected- was just better suited for more detailed prompts that were maybe more landscape-, collage-, or object-focused (like the images I had created before).
 
-{IMAGES: VQGAN TOO FRAGMENTED}
+![AI generated image, distorted face of a masculine figure, with many features repeated{Photorealistic Portrait of a Powerful Person - VQGAN, IMGNET,CLIP}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video_photorealistic_portrait_of_a_powerful_person_imgnet.png?raw=true)
+
+![AI generated image, fragmented faces and suits {A Strong and Successful CEO - VQGAN, FacesHQ, CLIP}](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/03_Earlier_Tests/video-12-facehq-a_strong_and_successful_ceo.png?raw=true)
 
 To see if it might help, I did also try to use an image of my self as an initialization or target image, which had somewhat interesting results but still did not exactly feel like what I was looking for.
 
