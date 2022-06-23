@@ -105,7 +105,7 @@ Finally, as mentioned, I added in portrait-specific words to try to get better f
 
 #### FINAL NOTES ON BIAS
 
-Beside these major observations, I also recommend looking through the images in the final collections [folder](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/tree/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots) as the collection itself reveals a lot of interesting biases in how these prompts are understood. I also find it important to note that it was beyond the scope of this project to examine biases based on other factors beside gender, but the produced images are still strikingly overwhelmingly white, which points to the need for further in-depth investigations into factors like racial bias, and likely more.
+Beside these major observations, I also recommend looking through the images in the final collections [folder](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/tree/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots) or the [google drive folder](https://drive.google.com/drive/folders/19hLVL9XDqsolbRx-uCAlgb2wnwinQ-vH?usp=sharing), which also has some video outputs, as this collection itself reveals a lot of interesting biases in how these prompts are understood. I also find it important to note that it was beyond the scope of this project to examine biases based on other factors beside gender, but the produced images are still strikingly overwhelmingly white, which points to the need for further in-depth investigations into factors like racial bias, and likely more.
 
 ## Curation and Creation - Final Image Blending
 
