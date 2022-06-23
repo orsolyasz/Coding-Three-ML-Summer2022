@@ -76,7 +76,7 @@ One experiment I wanted to try was intentionally adding in strongly feminine wor
 ![Four Dall-e Mini output images side by side, showing "successsful lawyer" as mostly men vs "succesful lawyer woman" as women, "successful serious person" as mostly men vs "serious successful leader woman" as women](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/woman_added.png?raw=true)
 
 
-#### OVERBEARINGLY WEIGHTED WORDS
+#### OVERPOWERING WORDS
 
 As I was exploring, I noticed that there were certain words that would have an overbearingly powerful effect on the image, pulling it toward their base meaning, even if in context these words were not the focus of the text prompt. Words like earth, natural, or future are examples that could simply not be included without overpowering the overall image (anything with "earth" in it just seemed to produce a massive globe with some minor details maybe), and often even take away a person/portrait element completely (even if person had been in the prompt, even as the very first word of the text).
 
@@ -85,19 +85,23 @@ As I was exploring, I noticed that there were certain words that would have an o
 
 #### GENDER TEST 2: -PERSON
 
-After a while, I started feeling like perhaps the word "person" was also an overbearingly powerful word, pulling everything into masc territory. My dilemma was: if this was the case, that would be revealing in itself, but it would still stop me from seeing the effect of other words appropriately. So, I ran a test where the prompt was literally only to show a portrait of a person - and yes, it was overwhelmingly masc. Keeping this in mind, I then tried a number of my previous prompts without the word "person" in it, to try to really focus on the representations of the actual characteristics I was looking at.
+After a while, I started feeling like perhaps the word "person" was also an overbearingly powerful word, pulling everything into masc territory. My dilemma was: if this was the case, that would be revealing in itself, but it would still stop me from seeing the effect of other words appropriately. So, I ran a test where the prompt was literally only to show a portrait of a person - and yes, it was overwhelmingly masc. Keeping this in mind, I then tried a number of my previous prompts without the word "person" in it, to try to really focus on the representations of the actual characteristics I was looking at. More often than not, words that previously produced very masculine results continued to do so, but there were some interesting twists, like "a photorealistic portrait of success" resulting i a majority of feminine figures being shown.
 
-![Four Dall-e Mini images, showing](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/person_taken_out.png?raw=true)
+![Four Dall-e Mini images, showing "a photorealistic person," "a photorealistic human," and "a photorealistic portrait of strength" as very masculine figures, while "a photorealistic portrait of success" shows mostly feminine faces ](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/person_taken_out.png?raw=true)
 
 
 #### GENDER TEST 3: +GENDER
 
 At one point, I wanted to see if the AI might have heard about "the weak gender" and the "strong gender" -- but to my surprise, both came out to be very non-masc images. This made me think -- is gender in itself understood as a non masculine word? Do men not have a gender according to this AI? And, indeed, gender is so strongly seen as the opposite of masc that "portrait of a person from a gender" comes out really fem, even though we just established that person was weighted toward masc meanings.
 
+![]()
+
 
 #### ADDING IN "REALISTIC PORTRAIT"
 
 Finally, as mentioned, I added in portrait-specific words to try to get better faces out of the system later on - here are some results of that.
+
+#### FINAL NOTES ON BIAS
 
 Beside these major observations, I also recommend looking through the images in the final collections [folder](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/tree/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots) as the collection itself reveals a lot of interesting biases in how these prompts are understood. I also find it important to note that it was beyond the scope of this project to examine biases based on other factors beside gender, but the produced images are still strikingly overwhelmingly white, which points to the need for further in-depth investigations into factors like racial bias, and likely more.
 
