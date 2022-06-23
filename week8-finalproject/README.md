@@ -94,12 +94,14 @@ After a while, I started feeling like perhaps the word "person" was also an over
 
 At one point, I wanted to see if the AI might have heard about "the weak gender" and the "strong gender" -- but to my surprise, both came out to be very non-masc images. This made me think -- is gender in itself understood as a non masculine word? Do men not have a gender according to this AI? And, indeed, gender is so strongly seen as the opposite of masc that "portrait of a person from a gender" comes out really fem, even though we just established that person was weighted toward masc meanings.
 
-![]()
+![Four Dall-e Mini images, showing that adding "weak gender," "strong gender," "default gender," and even simply "a gender" all produce femenine portraits ](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/gender.png?raw=true)
 
 
 #### ADDING IN "REALISTIC PORTRAIT"
 
-Finally, as mentioned, I added in portrait-specific words to try to get better faces out of the system later on - here are some results of that.
+Finally, as mentioned, I added in portrait-specific words to try to get better faces out of the system later on - here are some results of that. As you might notice, these produced images that were more focused on faces only, often had more detail or texture, and were stylized like "serious" (often b&w) portrait photography or portraiture drawings - which I enjoyed. 
+
+![Four Dall-e Mini output images, showing the effect described above](https://github.com/orsolyasz/Coding-Three-ML-Summer2022/blob/main/week8-finalproject/Generated_Imagery/01_Experimentation-Raw_Dall-e_Mini_Screenshots/xx_bias_observations/photorealistic.png?raw=true)
 
 #### FINAL NOTES ON BIAS
 
@@ -132,6 +134,8 @@ From these, I selected relatively mid-way blends where both my facial features a
 Overall, while I consider the final series of five portraits the main product of this project, I am also really satisfied with the range of exploration I was able to undertake in the process. The saved set of generated images point to a range of stereotypes built in to these systems.  While Dall-e Mini has a note about potential bias and stereotypes on their platform, it is clear that these biases are not going to be easy to address on a system without direct intervention (eg intentionally removing gendered "weights" form non-gendered words) that was trained on unfiltered internet data - as ultimately, the system merely reflects the many ways in which a lot of society think and talk a biased way on the internet.
 
 The one regret I have is not managing time enough to explore translating my final product into a manually created physical art piece. This aspect was something I had hoped to explore more, but I ran out of time having spent quite long on image generation and the experimentation with different text prompts. I definitely plan on recreating the series as a mixed media painting in the near future.
+
+In terms of the future, it is clear that further investigation into the exent of these gender biases - as well as other biases, especially racial bias - in models such as Dall-e Mini is extremely needed. Even with the limited explorations in this project, a significant degree of gender bias has been observed, and even without an added focus racial bias has also been clearly demonstrated by how the model defaults to portraying figures who are white or have light skin colors. How these biases can be addressed or if they can even really be corrected is a further question to investigate.
 
 On a final, technical note, I wonder if and how I could find a way to create a more integrated system for the creation of these images - I did not really find a notebook to use dall-e mini but if I did, or found out how to do that, I would love to build the two steps - image generation and portrait blending - into one single notebook for a smoother workflow.
 
